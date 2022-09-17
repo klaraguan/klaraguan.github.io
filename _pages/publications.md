@@ -14,7 +14,7 @@ years: [2022]
       <h3 class="bibliography-year">{{y}}</h3>
     </div>
     <div class="col-sm-11 p-0">
-      {% bibliography -f papers %}
+      {% bibliography -f papers -q @*[year={{y}}]* %}
     </div>
   </div>
 {% endfor %}
