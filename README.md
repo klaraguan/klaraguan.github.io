@@ -1,6 +1,6 @@
-# Otilia Stretcu's personal webpage
+# Klara Guan's personal webpage
 
-This is the personal website of Otilia Stretcu, which can be visualized at [https://otiliastr.github.io/](https://otiliastr.github.io/).
+This is the personal website of Klara Guan, which can be visualized at [https://klaraguan.github.io/](https://klaraguan.github.io/).
 
 ## How to use this template for your website
 
@@ -16,7 +16,7 @@ Why Jekyll? Read this [blog post](https://karpathy.github.io/2014/07/01/switchin
 
 ### Installation
 
-Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (*hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)*), first fork the theme from `github.com:alshedivat/al-folio` to `github.com:<your-username>/<your-repo-name>` and do the following:
+Assuming you have [Ruby](https://www.ruby-lang.org/en/downloads/) and [Bundler](https://bundler.io/) installed on your system (_hint: for ease of managing ruby gems, consider using [rbenv](https://github.com/rbenv/rbenv)_), first fork the theme from `github.com:alshedivat/al-folio` to `github.com:<your-username>/<your-repo-name>` and do the following:
 
 ```bash
 $ git clone git@github.com:<your-username>/<your-repo-name>.git
@@ -31,6 +31,7 @@ After you are done, you can deploy it to [GitHub Pages](https://pages.github.com
 ```bash
 $ ./bin/deploy
 ```
+
 Note: make sure to commit all your changes on the `src` branch before deploying!
 
 ### Features
@@ -38,7 +39,7 @@ Note: make sure to commit all your changes on the `src` branch before deploying!
 Emphasis on whitespace, transparency, and academic usage: [theme demo](https://alshedivat.github.io/al-folio/).
 
 To learn more on how to use Jekyll, you can refer to, e.g., [this tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/).
-To know *why Jekyll*, you can read this [blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/).
+To know _why Jekyll_, you can read this [blog post](https://karpathy.github.io/2014/07/01/switching-to-jekyll/).
 
 #### Ergonomic Publications
 
@@ -49,8 +50,10 @@ You can also add new `*.bib` files and customize the look of your publications h
 Keep meta-information about your co-authors in `_data/coauthors.yml` and Jekyll will insert links to their webpages automatically.
 
 #### Collections
+
 This Jekyll theme implements collections to let you break up your work into categories.
 The example is divided into news, poetry, and projects, but easily revamp this into apps, short stories, courses, or whatever your creative work is.
+
 > To do this, edit the collections in the config file, create a corresponding folder, and update the portfolio and poetry source files.
 
 Three different layouts are included—the poetry layout, for a simple list of entries, the blog layout (`blog/index.html`), for more detailed descriptive list of entries, and the portfolio layout.
@@ -59,16 +62,19 @@ If no image is provided, the square is auto-filled with the chosen theme color.
 Thumbnail sizing is not necessary, as the grid crops images perfectly.
 
 #### Theming
+
 Six beautiful theme colors have been selected to choose from.
 The default is purple, but quickly change it by editing the `_sass/base.scss` file in line 40.
 The color variable are listed there, as well.
 
 #### Photos
+
 Photo formatting is made simple using rows of a 3-column system.
 Make photos 1/3, 2/3, or full width.
 Easily create beautiful grids within your blog posts and projects pages.
 
 #### Code Highlighting
+
 This theme implements Jekyll's built in code syntax highlighting with Pygments.
 Just use a liquid tag to delineate your code:
 {% highlight python %} code code code {% endhighlight %}

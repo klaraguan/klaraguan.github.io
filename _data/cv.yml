@@ -1,0 +1,56 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Zhitong "Klara" Guan
+    - name: Contact
+      value: kwan1878 [at] gmail [dot] com
+    - name: Languages
+      value: English, Mandarin, French
+
+- title: Research Areas
+  type: list
+  contents:
+    - My research focuses on advancing Human-Computer Interaction.
+    - Specifically, I am interested in developing accessible technologies for people with disabilities. I hope to use technology to improve quality of life.
+
+- title: Education
+  type: table
+  contents:
+    - title: UC Berkeley – Master of Engineering in IEOR
+      year: 2020 - 2021
+      location: Berkeley, CA
+      description:
+        - Advised by <a href="https://zheng.ieor.berkeley.edu/" target="_blank">Prof. Zeyu Zheng</a>
+        - "GPA: 4.0 (4.0 scale)"
+        - "Capstone Project: Learning from data (TODO)"
+    - title: UC Berkeley - Bachelor of Arts in Math and Data Science
+      year: 2016 - 2020
+      location: Berkeley, CA
+      description:
+        - Graduated with Honors
+        - "GPA: 3.8 (4.0 scale)"
+
+- title: Work Experience
+  type: table
+  contents:
+    - title: "Research Associate at APEX Group of HKUST"
+      year: 2022 - now
+      location: Guangzhou, China
+      description:
+        - Accessibility technology researcher under <a href="https://www.mingmingfan.com" target="_blank">Prof. Mingming Fan</a>.
+    - title: "Product Manager at the WeChat Group, Tencent"
+      year: "2021 - 2022"
+      location: Guangzhou, China
+      description:
+        - Manage products (TODO)
+    - title: "Data Scientist Intern at Microsoft"
+      year: Summer 2020
+      location: USA
+      description:
+        - TODO
+    - title: "Actuarial Intern at Delta Dental"
+      year: Summer 2019
+      location: Oakland, CA
+      description:
+        - TODO
