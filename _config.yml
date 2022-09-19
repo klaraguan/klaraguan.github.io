@@ -4,9 +4,7 @@
 
 title: Klara Guan # the website title (if blank, full name will be used instead)
 repository: klaraguan/klaraguan.github.io
-first_name: Zhitong
-middle_name: (Klara)
-last_name: Guan
+name: Klara Guan
 email: kwan1878@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
