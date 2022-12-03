@@ -20,8 +20,8 @@ address: <a href="https://www.google.com/maps/place/Du+Xue+Lu,+Nan+Shan+Qu,+Shen
 
 <div style="display: flex; flex-wrap: wrap;">
     <div class="text-justify p-0">
-        <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="float: right;">
-          <img class="profile-img img-responsive" src="{{ 'me.jpg' | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
+        <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="width:250px; float: right;">
+          <img class="profile-img img-responsive" src="{{ 'me.png' | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
         </div>
 
         <p>
