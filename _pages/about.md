@@ -5,7 +5,7 @@ title: about
 nav: about
 
 <!--description:
-address: <a href="https://www.google.com/maps/place/Du+Xue+Lu,+Nan+Shan+Qu,+Shen+Zhen+Shi,+Guang+Dong+Sheng,+China,+518071/@22.5938948,113.9895813,17z/data=!3m1!4b1!4m5!3m4!1s0x3403f2e52bee6d63:0x1cd59a51b71ee809!8m2!3d22.5938899!4d113.99177" class="page-description" target="_blank">HKUST GZ Campus, Guangzhou, Guangdong, China </a>
+address: <a href="https://g.co/kgs/Po6uFcK" class="page-description" target="_blank">1616 Guadalupe St., Shool of Information, UT Austin. Austin, TX 78701  </a>
 ---
 
 <div class="col p-0 pt-4 pb-4">
@@ -25,11 +25,11 @@ address: <a href="https://www.google.com/maps/place/Du+Xue+Lu,+Nan+Shan+Qu,+Shen
         </div>
 
         <p>
-            I am a Research Associate at <a href="https://www.mingmingfan.com/lab/" target="_blank">the APEX Group of Hong Kong University of Science and Techology (HKUST)</a> in Guangzhou, China, working on accessibility technology research. I am extremely fortunate to be advised by <a href="https://www.mingmingfan.com" target="_blank">Prof. Mingming Fan</a>. My research focuses on advancing Human-Computer Interaction. Specifically, I am interested in developing accessible technologies for people with disabilities. I hope to use technology to improve quality of life.
+            I am a PhD student at the <a href="https://ischool.utexas.edu/" target="_blank">the School of Information at UT Austin</a>. I am extremely fortunate to be advised by <a href="https://ischool.utexas.edu/profiles/soo-young-rieh" target="_blank">Prof. Soo Young Rieh</a>. My research focuses on advancing Human-Computer Interaction. Specifically, I am interested in developing accessible technologies for people with disabilities. I hope to use technology to improve quality of life.
         </p>
 
         <p>
-            Previously, I was a Product Manager in the <a href="https://www.wechat.com/" target="_blank">WeChat Group</a> of <a href="https://www.tencent.com/" target="_blank">Tencent Holdings Ltd.</a>, overseeing a myriad of products.
+            Previously, I was a research associate at <a href="https://www.mingmingfan.com/lab/" target="_blank">the APEX Group of Hong Kong University of Science and Techology (HKUST)</a> in Guangzhou, China, working on accessibility technology research, advised by <a href="https://www.mingmingfan.com" target="_blank">Prof. Mingming Fan</a>. I also worked as a Product Manager in the <a href="https://www.wechat.com/" target="_blank">WeChat Group</a> of <a href="https://www.tencent.com/" target="_blank">Tencent Holdings Ltd.</a>, overseeing a myriad of products.
         </p>
     </div>
 

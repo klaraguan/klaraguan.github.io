@@ -5,7 +5,7 @@
 title: Klara Guan # the website title (if blank, full name will be used instead)
 repository: klaraguan/klaraguan.github.io
 name: Klara Guan
-email: kwan1878@gmail.com
+email: klarazt@utexas.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -69,7 +69,7 @@ github_username: klaraguan # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: klara_guan # your LinkedIn user name
-scholar_userid: # your Google Scholar ID
+scholar_userid: 30w4K3oAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username

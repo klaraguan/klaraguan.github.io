@@ -4,19 +4,26 @@
     - name: Full Name
       value: Zhitong "Klara" Guan
     - name: Contact
-      value: klaraztguan [at] ust [dot] hk
+      value: klarazt [at] utexas [dot] edu
     - name: Languages
       value: English, Mandarin, French
 
 - title: Research Areas
   type: list
   contents:
-    - My research focuses on advancing Human-Computer Interaction.
+    - My research focuses on advancing Human-AI Interaction.
     - I seek to investigate the impact of digital technology on human experience and design interactive and generalizable systems with an emphasis on inclusivity and human self-improving.
 
 - title: Education
   type: table
   contents:
+    - title: UT Austin - PhD in Information Science
+      year: 2023 - 2028
+      location: Austin, TX
+      description:
+        - Advised by <a href="https://ischool.utexas.edu/profiles/soo-young-rieh" target="_blank">Prof. Soo Young Rieh</a>
+        - "GPA: 4.0 (4.0 scale)"
+        - "Research Topics: Human-AI Interaction, Digital Well-being, Human-centered AI"
     - title: UC Berkeley – Master of Engineering in IEOR
       year: 2020 - 2021
       location: Berkeley, CA
@@ -34,8 +41,13 @@
 - title: Work Experience
   type: table
   contents:
+    - title: "Graduate Researcher at the School of Information, UT Austin"
+      year: 2023 - Now
+      location: Guangzhou, China
+      description:
+        - Currently studying human-AI interaction.
     - title: "Research Associate at APEX Group of HKUST"
-      year: 2022 - now
+      year: 2022 - 2023
       location: Guangzhou, China
       description:
         - Accessibility technology/digital well-being researcher under <a href="https://www.mingmingfan.com" target="_blank">Prof. Mingming Fan</a>.
