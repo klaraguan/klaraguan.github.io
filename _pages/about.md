@@ -25,7 +25,7 @@ address: <a href="https://g.co/kgs/Po6uFcK" class="page-description" target="_bl
         </div>
 
         <p>
-            I am a PhD student at the <a href="https://ischool.utexas.edu/" target="_blank">the School of Information at UT Austin</a>. I am extremely fortunate to be advised by <a href="https://ischool.utexas.edu/profiles/soo-young-rieh" target="_blank">Prof. Soo Young Rieh</a>. My research focuses on advancing Human-Computer Interaction. Specifically, I am interested in developing accessible technologies for people with disabilities. I hope to use technology to improve quality of life.
+            I am a PhD student at the <a href="https://ischool.utexas.edu/" target="_blank">the School of Information at UT Austin</a>. I am extremely fortunate to be advised by <a href="https://ischool.utexas.edu/profiles/soo-young-rieh" target="_blank">Prof. Soo Young Rieh</a>. My research focuses on advancing Human-Computer Interaction and Search. Specifically, I am interested in rethinking technologies that can bridge thinking and reflection.
         </p>
 
         <p>

@@ -22,7 +22,8 @@ description: classes, workshops, and teaching material
     <h6 class="font-italic mt-2 mt-sm-0">Spring 2025: TA</h6>
     <ul class="card-text font-weight-light list-group list-group-flush">
       <li class="list-group-item">○ Undergraduate introduction to user experience design.</li>
-      <li class="list-group-item">○ I mentored groups of students working on class projects and homeworks.</li>
+      <li class="list-group-item">○ I gave lectures on wireframing and prototyping.</li>
+
     </ul>
   </div>
 </div>
@@ -40,8 +41,8 @@ description: classes, workshops, and teaching material
     </div>
     <h6 class="font-italic mt-2 mt-sm-0">Fall 2024: TA</h6>
     <ul class="card-text font-weight-light list-group list-group-flush">
-      <li class="list-group-item">○ Graduate introduction to user experience design.</li>
-      <li class="list-group-item">○ I mentored groups of students working on class projects and homeworks.</li>
+      <li class="list-group-item">○ Graduate course on user-centered design.</li>
+      <li class="list-group-item">○ I mentored students working on class projects and homeworks.</li>
     </ul>
   </div>
 </div>
