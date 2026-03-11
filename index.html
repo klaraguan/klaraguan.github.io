@@ -1,302 +1,578 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zhitong Klara Guan</title>
+  <meta
+    name="description"
+    content="Zhitong Klara Guan is a PhD Candidate at the School of Information, The University of Texas at Austin."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&amp;display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <title>Klara Guan</title>
-  <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-">
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 19px;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+      -webkit-font-smoothing: antialiased;
+    }
 
-  <!-- Fonts and Icons -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons" />
+    a { color: #0070c0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="https://klaraguan.github.io/assets/css/all.min.css">
-  <link rel="stylesheet" href="https://klaraguan.github.io/assets/css/academicons.min.css">
-  <link rel="stylesheet" href="https://klaraguan.github.io/assets/css/main.css">
-  <link rel="canonical" href="https://klaraguan.github.io/">
+    nav {
+      border-bottom: 1px solid #e0e0e0;
+      padding: 0;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 50;
+    }
+
+    .nav-inner {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 48px;
+    }
+
+    .nav-brand {
+      font-weight: 600;
+      font-size: 1.12rem;
+      color: #333;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      font-size: 1.04rem;
+      color: #555;
+    }
+
+    .nav-links a:hover { color: #0070c0; text-decoration: none; }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .profile {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+    }
+
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: #e8e8e8;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .profile-info h1 {
+      font-size: 2.15rem;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 0.2rem;
+      line-height: 1.2;
+    }
+
+    .profile-role {
+      font-size: 1.05rem;
+      color: #666;
+      margin-bottom: 0.8rem;
+    }
+
+    .profile-address {
+      font-size: 1rem;
+      color: #888;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.2rem;
+      font-size: 1rem;
+    }
+
+    .bio {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 2rem;
+      max-width: 680px;
+    }
+
+    .bio p + p { margin-top: 0.75rem; }
+
+    .section { margin-bottom: 2.5rem; }
+
+    .section-title {
+      font-size: 1.28rem;
+      font-weight: 600;
+      color: #111;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .simple-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1.02rem;
+    }
+
+    .simple-table td {
+      padding: 0.3rem 0;
+      vertical-align: top;
+    }
+
+    .simple-table td:first-child {
+      width: 160px;
+      color: #888;
+      white-space: nowrap;
+      padding-right: 1rem;
+      flex-shrink: 0;
+    }
+
+    .news-list {
+      margin: 0.35rem 0 0 1.1rem;
+    }
+
+    .news-list li + li {
+      margin-top: 0.2rem;
+    }
+
+    .pub-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .pub-item {
+      display: flex;
+      gap: 1.2rem;
+      align-items: flex-start;
+    }
+
+    .pub-thumb {
+      width: 100px;
+      height: 70px;
+      flex-shrink: 0;
+      background: #f0f0f0;
+      border: 1px solid #e0e0e0;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .pub-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .pub-body { flex: 1; }
+
+    .pub-venue {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.15rem;
+    }
+
+    .pub-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: #b5451b;
+      background: #fdf0ec;
+      border: 1px solid #f0c4b4;
+      padding: 0.05rem 0.4rem;
+      border-radius: 2px;
+      margin-left: 0.4rem;
+      vertical-align: middle;
+    }
+
+    .pub-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #111;
+      line-height: 1.35;
+      margin-bottom: 0.2rem;
+    }
+
+    .pub-authors {
+      font-size: 0.97rem;
+      color: #666;
+      margin-bottom: 0.25rem;
+    }
+
+    .pub-authors em {
+      font-style: normal;
+      font-weight: 400;
+      color: #444;
+      text-decoration: underline;
+      text-underline-offset: 0.08em;
+    }
+
+    .pub-links {
+      font-size: 0.94rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.8rem;
+      align-items: flex-start;
+    }
+
+    .pub-links a,
+    .pub-links button {
+      display: inline-block;
+      padding: 0.22rem 0.62rem;
+      border: 1px solid #444;
+      color: #111;
+      background: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .pub-links a:hover,
+    .pub-links button:hover {
+      text-decoration: none;
+      background: #f7f7f7;
+    }
+
+    .pub-links button {
+      font-family: inherit;
+    }
+
+    .abstract-box {
+      display: none;
+      margin-top: 0.5rem;
+      padding: 0.7rem 0.8rem;
+      border: 1px dashed #777;
+      color: #444;
+      font-size: 0.9rem;
+      line-height: 1.55;
+      background: #fff;
+    }
+
+    .abstract-box.is-open {
+      display: block;
+    }
+
+    .cv-section + .cv-section { margin-top: 1.5rem; }
+
+    .cv-sec-label {
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #999;
+      margin-bottom: 0.5rem;
+    }
+
+    .cv-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 0.5rem;
+      padding: 0.3rem 0;
+      font-size: 1.04rem;
+    }
+
+    .cv-period { color: #888; }
+    .cv-entry-title { font-weight: 600; color: #222; }
+    .cv-entry-sub { font-size: 0.97rem; color: #666; }
+
+    .contact-info { font-size: 1.04rem; }
+    .contact-info p { margin-bottom: 0.3rem; }
+
+    footer {
+      border-top: 1px solid #e0e0e0;
+      padding: 1.2rem 1.5rem;
+      text-align: center;
+      font-size: 0.92rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 560px) {
+      .profile { flex-direction: column; align-items: center; text-align: center; }
+      .profile-links { justify-content: center; }
+      .pub-item { flex-direction: column; }
+      .pub-thumb { width: 100%; height: 120px; }
+      .cv-row { grid-template-columns: 1fr; }
+      .cv-period { color: #aaa; font-size: 0.82rem; }
+      .nav-inner { flex-direction: column; align-items: flex-start; padding-top: 0.75rem; padding-bottom: 0.75rem; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <nav id="navbar" class="navbar fixed-top navbar-expand-md grey lighten-5 z-depth-1 navbar-light">
-    <div class="container-fluid p-0">
-      
-        <div class="row ml-1 ml-sm-0">
-          <span class="contact-icon text-center" style="line-height: 1em;">
-            <a href="mailto:klarazt@utexas.edu"><i class="fa fa-envelope-square gm-icon"></i></a>
-            <a href="https://scholar.google.com/citations?userid=30w4K3oAAAAJ&user=30w4K3oAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square gs-icon"></i></a>
-            <a href="https://www.github.com/klaraguan" target="_blank" title="GitHub"><i class="fab fa-github-square gh-icon"></i></a>
-            <a href="https://www.linkedin.com/in/klara_guan" target="_blank" title="LinkedIn"><i class="fab fa-linkedin li-icon"></i></a>
-          </span>
-        </div>
-      
-      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
-          <li class="nav-item navbar-active font-weight-bold">
-            <a class="nav-link" href="https://klaraguan.github.io/">
-              about
-              
-                <span class="sr-only">(current)</span>
-              
-            </a>
-          </li>
-          
-            
-          
-            
-              <li class="nav-item ">
-                  <a class="nav-link" href="https://klaraguan.github.io/cv/">
-                    curriculum vitae
-                    
-                  </a>
-              </li>
-            
-          
-            
-          
-            
-              <li class="nav-item ">
-                  <a class="nav-link" href="https://klaraguan.github.io/projects/">
-                    projects
-                    
-                  </a>
-              </li>
-            
-          
-            
-              <li class="nav-item ">
-                  <a class="nav-link" href="https://klaraguan.github.io/publications/">
-                    publications
-                    
-                  </a>
-              </li>
-            
-          
-            
-              <li class="nav-item ">
-                  <a class="nav-link" href="https://klaraguan.github.io/teaching/">
-                    teaching
-                    
-                  </a>
-              </li>
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-        </ul>
-      </div>
+  <nav>
+    <div class="nav-inner">
+      <span class="nav-brand">Zhitong Klara Guan</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="news/">News</a></li>
+        <li><a href="https://scholar.google.com/citations?userid=30w4K3oAAAAJ&amp;user=30w4K3oAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- Scrolling Progress Bar -->
-  <progress id="progress" value="0">
-    <div class="progress-container">
-      <span class="progress-bar"></span>
+  <main>
+    <div class="profile" id="about">
+      <div class="profile-photo">
+        <img src="assets/img/me.png" alt="Portrait of Zhitong Klara Guan" />
+      </div>
+      <div class="profile-info">
+        <h1>Zhitong Klara Guan</h1>
+        <div class="profile-role">PhD Candidate · School of Information, The University of Texas at Austin</div>
+        <div class="profile-address">
+          1616 Guadalupe St.<br />
+          School of Information, UT Austin<br />
+          Austin, TX 78701
+        </div>
+        <div class="profile-links">
+          <a href="mailto:klarazt@utexas.edu">klarazt@utexas.edu</a>
+          <a href="https://scholar.google.com/citations?userid=30w4K3oAAAAJ&amp;user=30w4K3oAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/klara_guan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="assets/pdf/vitae.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        </div>
+      </div>
     </div>
-  </progress>
 
-  <!-- Content -->
-  <div class="content">
-    
+    <div class="bio">
+      <p>
+        I am a PhD Candidate in Information Studies at the <a href="https://ischool.utexas.edu/" target="_blank" rel="noopener noreferrer">University of Texas at Austin</a>, 
+        advised by <a href="https://ischool.utexas.edu/profiles/soo-young-rieh" target="_blank" rel="noopener noreferrer">Prof. Soo Young Rieh</a>. Previously, 
+        I was a Research Associate at the <a href="https://www.mingmingfan.com/lab/" target="_blank" rel="noopener noreferrer">APEX Group at HKUST</a> working on 
+        accessibility technology research with <a href="https://www.mingmingfan.com" target="_blank" rel="noopener noreferrer">Prof. Mingming Fan</a>, and a 
+        Product Manager at Tencent's WeChat Group. I hold an M.S. in Industrial Engineering and Operations Research and a B.A. in Mathematics and Data Science (Double Major), both from UC Berkeley.
+      </p>
+      <p>
+        My research lies at the intersection of <strong>Human-Computer Interaction</strong> and <strong>Interactive Information Retrieval</strong>, with a focus on designing and evaluating <strong>Generative AI search systems</strong> that augment rather than replace human cognition. I am particularly interested in how AI-mediated search can support higher-order cognitive processes: <strong>sensemaking</strong>, <strong>critical thinking</strong>, <strong>decision-making</strong>, and <strong>creativity</strong>, and how interface design shapes the way people think and engage with information.
+      </p>
+    </div>
 
-<div class="col p-0 pt-4 pb-4">
-  <h1 class="pb-3 title text-left font-weight-bold">Zhitong "Klara" Guan</h1>
-  <h6 class="m-0 mb-2" style="font-size: 0.83em;"></h6>
-  
-      <h6 class="m-0 mb-2" style="font-size: 0.83em;"><a href="https://g.co/kgs/Po6uFcK" class="page-description" target="_blank">1616 Guadalupe St., Shool of Information, UT Austin. Austin, TX 78701  </a></h6>
-  
-</div>
+    <div class="section" id="news">
+      <div class="section-title">news <a href="news/" aria-label="All news">📰</a></div>
+      <table class="simple-table">
+        <tr>
+          <td>Apr 2026</td>
+          <td>
+            Upcoming travel to ACM CHI 2026 in Barcelona, Spain to:
+            <ul class="news-list">
+              <li>present our position paper Envisioning Sensemaking in Multi-Human, Multi-Agent Collaborative Knowledge Work at the <a href="https://sites.google.com/view/sensemakingworkshop2026/home" target="_blank" rel="noopener noreferrer">Workshop on Sensemaking and AI 2026</a></li>
+              <li>co-organizing the <a href="https://ai-tools-for-thought.github.io/workshop/" target="_blank" rel="noopener noreferrer">Workshop on Tools for Thought: Understanding, Protecting, and Augmenting Human Cognition with Generative AI</a>.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Mar 2026</td>
+          <td>Excited to attend my first <a href="https://chiir2026.github.io/dc-paper.html" target="_blank" rel="noopener noreferrer">CHIIR conference</a>! Presenting at the Doctoral Consortium and the Workshop on Generative AI &amp; Academic Search. See you in Seattle.</td>
+        </tr>
+        <tr>
+          <td>Jan 2026</td>
+          <td>I passed my qualifying procedure, including a qualifying paper, written exam, and oral exam. Special thanks to my committee: <a href="https://sites.utexas.edu/rieh/" target="_blank" rel="noopener noreferrer">Prof. Soo Young Rieh</a>, <a href="https://sites.utexas.edu/adillon/" target="_blank" rel="noopener noreferrer">Prof. Andrew Dillon</a>, and <a href="https://jacekg.ischool.utexas.edu/" target="_blank" rel="noopener noreferrer">Prof. Jacek Gwizdka</a> for their guidance and support.</td>
+        </tr>
+        <tr>
+          <td>Oct 2025</td>
+          <td>Our work Enhancing Critical Thinking in Generative AI Search with Metacognitive Prompts was accepted at <a href="https://www.asist.org/meetings-events/am/am25/" target="_blank" rel="noopener noreferrer">ASIS&amp;T 2025</a>. See you in Crystal City, Virginia.</td>
+        </tr>
+      </table>
+    </div>
 
-<!-- Introduction -->
-
-<div style="display: flex; flex-wrap: wrap;">
-    <div class="text-justify p-0">
-        <div class="col-xs-12 col-sm-6 p-0 pt-2 pb-sm-2 pb-4 pl-sm-4 text-center" style="width:250px; float: right;">
-          <img class="profile-img img-responsive" src="https://klaraguan.github.io/assets/img/me.png" />
+    <div class="section" id="publications">
+      <div class="section-title">publications</div>
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-thumb">
+            <img src="assets/img/metacues.png" alt="Metacognitive prompts paper thumbnail" />
+          </div>
+          <div class="pub-body">
+            <div class="pub-venue">ASIS&amp;T 2025</div>
+            <div class="pub-title">Enhancing Critical Thinking in Generative AI Search with Metacognitive Prompts</div>
+            <div class="pub-authors">Anjali Singh, <em>Zhitong Guan</em>, and Soo Young Rieh</div>
+            <div class="pub-links">
+              <button type="button" class="pub-abstract-toggle" aria-expanded="false" aria-controls="pub-abstract-3">Abs</button>
+              <a href="https://arxiv.org/pdf/2505.24014" target="_blank" rel="noopener noreferrer">arXiv</a>
+              <a href="https://doi.org/10.1002/pra2.1287" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+            <div class="abstract-box" id="pub-abstract-3">
+              The growing use of Generative AI (GenAI) conversational search tools has raised concerns about their effects on people's metacognitive engagement, critical thinking, and learning. As people increasingly rely on GenAI to perform tasks such as analyzing and applying information, they may become less actively engaged in thinking and learning. This study examines whether metacognitive prompts designed to encourage people to pause, reflect, assess their understanding, and consider multiple perspectives can support critical thinking during GenAI-based search. We conducted a user study (N = 40) with university students to investigate the impact of metacognitive prompts on their thought processes and search behaviors while searching with a GenAI tool. We found that these prompts led to more active engagement, leading students to explore a broader range of topics and engage in deeper inquiry through follow-up queries. Students reported that the prompts were especially helpful for considering overlooked perspectives, promoting evaluation of AI responses, and identifying key takeaways. Additionally, the effectiveness of these prompts was influenced by students' metacognitive flexibility. Our findings highlight the potential of metacognitive prompts to foster critical thinking and provide insights for designing and implementing metacognitive support in human-AI interactions.
+            </div>
+          </div>
         </div>
 
-        <p>
-            I am a PhD student at the <a href="https://ischool.utexas.edu/" target="_blank">the School of Information at UT Austin</a>. I am extremely fortunate to be advised by <a href="https://ischool.utexas.edu/profiles/soo-young-rieh" target="_blank">Prof. Soo Young Rieh</a>. My research focuses on advancing Human-Computer Interaction and Search. Specifically, I am interested in rethinking technologies that can bridge thinking and reflection.
-        </p>
+        <div class="pub-item">
+          <div class="pub-thumb">
+            <img src="assets/img/cog.png" alt="Human cognition project thumbnail" />
+          </div>
+          <div class="pub-body">
+            <div class="pub-venue">CHI 2025 Workshop</div>
+            <div class="pub-title">Protecting Human Cognition in the Age of AI</div>
+            <div class="pub-authors">Anjali Singh, Karan Taneja, <em>Zhitong Guan</em>, and Avijit Ghosh</div>
+            <div class="pub-links">
+              <button type="button" class="pub-abstract-toggle" aria-expanded="false" aria-controls="pub-abstract-1">Abs</button>
+              <a href="http://arxiv.org/abs/2502.12447" target="_blank" rel="noopener noreferrer">arXiv</a>
+            </div>
+            <div class="abstract-box" id="pub-abstract-1">
+              The rapid adoption of Generative AI (GenAI) is significantly reshaping human cognition, influencing how we engage with information, think, reason, and learn. This paper synthesizes existing literature on GenAI’s effects on different aspects of human cognition. Drawing on Krathwohl’s revised Bloom’s Taxonomy and Dewey’s conceptualization of reflective thought, we examine the mechanisms through which GenAI is affecting the development of different cognitive abilities. Accordingly, we provide implications for rethinking and designing educational experiences that foster critical thinking and deeper cognitive engagement and discuss future directions to explore the long-term cognitive effects of GenAI.
+            </div>
+          </div>
+        </div>
 
-        <p>
-            Previously, I was a research associate at <a href="https://www.mingmingfan.com/lab/" target="_blank">the APEX Group of Hong Kong University of Science and Techology (HKUST)</a> in Guangzhou, China, working on accessibility technology research, advised by <a href="https://www.mingmingfan.com" target="_blank">Prof. Mingming Fan</a>. I also worked as a Product Manager in the <a href="https://www.wechat.com/" target="_blank">WeChat Group</a> of <a href="https://www.tencent.com/" target="_blank">Tencent Holdings Ltd.</a>, overseeing a myriad of products.
-        </p>
-    </div>
-
-</div>
-
-<div class="col text-justify p-0">
-    <p>
-        Before I joined WeChat, I obtained a Master's degree in Industrial Engineering and Operations Research
-        from <a href="https://ieor.berkeley.edu/" target="_blank">UC Berkeley</a>, where I was advised by <a href="https://zheng.ieor.berkeley.edu/" target="_blank">Prof. Zeyu Zheng</a> working on practical machine learning and optimization problems. I earned my B.A. degree with Honors from UC Berkeley as well, where I double majored in <a href="https://math.berkeley.edu/" target="_blank">Math</a> and <a href="https://data.berkeley.edu/" target="_blank">Data Science</a>.
-    </p>
-</div>
-
-<!-- News -->
-<div class="news mt-3 p-0">
-  <h1 class="title mb-4 p-0">news</h1>
-  
-  
-    <div class="row p-0">
-      <div class="col-sm-2 p-0">
-        <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-          Mar 16, 2025
-        </span>
-      </div>
-      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p>Our work on studying human cognition vs GenAI was accepted to the Tools for Thought Workshop at CHI 2025. See you in Yokohama!
-</p>
-      </div>
-    </div>
-  
-    <div class="row p-0">
-      <div class="col-sm-2 p-0">
-        <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-          Jan 15, 2024
-        </span>
-      </div>
-      <div class="col-sm-10 mt-2 mt-sm-0 ml-3 ml-md-0 p-0 font-weight-light text">
-        <p>Our work on a mobile application system that helps blind and low-vision users to fetch packages from parcel lockers was nominated as the Best Paper Honorable Metion at CHI 2024. Checkout our demo video <a href="https://youtu.be/1UxNPTxmgxw" target="https://youtu.be/1UxNPTxmgxw">HERE</a>. See you in Honolulu!
-</p>
+        <div class="pub-item">
+          <div class="pub-thumb">
+            <img src="assets/img/fetchaid.png" alt="FetchAid project thumbnail" />
+          </div>
+          <div class="pub-body">
+            <div class="pub-venue">CHI 2024 <span class="pub-badge">🏅 Best Paper Honorable Mention</span></div>
+            <div class="pub-title">FetchAid: A Real-Time Intelligent Package Fetching Assistance Tool for People with Visual Impairments</div>
+            <div class="pub-authors"><em>Zhitong Guan</em>, Zeyu Xiong, and Mingming Fan</div>
+            <div class="pub-links">
+              <button type="button" class="pub-abstract-toggle" aria-expanded="false" aria-controls="pub-abstract-2">Abs</button>
+              <a href="http://arxiv.org/abs/2402.15723" target="_blank" rel="noopener noreferrer">arXiv</a>
+              <a href="https://doi.org/10.1145/3613904.3642213" target="_blank" rel="noopener noreferrer">DOI</a>
+            </div>
+            <div class="abstract-box" id="pub-abstract-2">
+              Parcel lockers have become an increasingly prevalent last-mile delivery method. Yet, a recent study revealed its accessibility challenges to people with visual impairments (PVI). Informed by the study, we designed FetchAid, a standalone intelligent mobile app assisting PVI in using a parcel locker in real-time by integrating computer vision and augmented reality (AR) technologies. FetchAid first uses a deep network to detect the user’s fingertip and relevant buttons on the touch screen of the parcel locker to guide the user to reveal and scan the QR code to open the target compartment door, and then guides the user to reach the door safely with AR-based context-aware audio feedback. Moreover, FetchAid provides an error-recovery mechanism and real-time feedback to keep the user on track. We show that FetchAid substantially improved task accomplishment and efficiency, and reduced frustration and overall effort in a study with 12 PVI participants, regardless of their vision conditions and previous experience.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  
-</div>
 
+    <div class="section" id="cv">
+      <div class="section-title">cv <small style="font-weight:400;font-size:0.82rem;color:#aaa;">[ <a href="assets/pdf/vitae.pdf" target="_blank" rel="noopener noreferrer">download PDF</a> ]</small></div>
 
-  </div>
+      <div class="cv-section">
+        <div class="cv-sec-label">Education</div>
+        <div class="cv-row">
+          <span class="cv-period">2023 - Present</span>
+          <div>
+            <div class="cv-entry-title">PhD, Information Studies</div>
+            <div class="cv-entry-sub">The University of Texas at Austin</div>
+          </div>
+        </div>
+        <div class="cv-row">
+          <span class="cv-period">2020 - 2021</span>
+          <div>
+            <div class="cv-entry-title">M.Eng., Industrial Engineering and Operations Research</div>
+            <div class="cv-entry-sub">University of California, Berkeley</div>
+          </div>
+        </div>
+        <div class="cv-row">
+          <span class="cv-period">2016 - 2020</span>
+          <div>
+            <div class="cv-entry-title">B.A., Mathematics and Data Science</div>
+            <div class="cv-entry-sub">University of California, Berkeley</div>
+          </div>
+        </div>
+      </div>
 
-  <!-- Footer -->
+      <div class="cv-section">
+        <div class="cv-sec-label">Experience</div>
+        <div class="cv-row">
+          <span class="cv-period">2023 - Present</span>
+          <div>
+            <div class="cv-entry-title">PhD Candidate</div>
+            <div class="cv-entry-sub">School of Information, UT Austin</div>
+          </div>
+        </div>
+        <div class="cv-row">
+          <span class="cv-period">2021 - 2023</span>
+          <div>
+            <div class="cv-entry-title">Research Associate</div>
+            <div class="cv-entry-sub">APEX Group, HKUST Guangzhou</div>
+          </div>
+        </div>
+        <div class="cv-row">
+          <span class="cv-period">Before 2021</span>
+          <div>
+            <div class="cv-entry-title">Product Manager</div>
+            <div class="cv-entry-sub">WeChat Group, Tencent</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-section">
+        <div class="cv-sec-label">Teaching</div>
+        <div class="cv-row">
+          <span class="cv-period">Fall 2025</span>
+          <div>
+            <div class="cv-entry-title">TA, Understanding &amp; Serving Users</div>
+            <div class="cv-entry-sub">UT Austin · INF 382C</div>
+          </div>
+        </div>
+        <div class="cv-row">
+          <span class="cv-period">Spring 2025</span>
+          <div>
+            <div class="cv-entry-title">TA, Intro User Experience Design</div>
+            <div class="cv-entry-sub">UT Austin · I 310U</div>
+          </div>
+        </div>
+        <div class="cv-row">
+          <span class="cv-period">Fall 2024</span>
+          <div>
+            <div class="cv-entry-title">TA, Understanding &amp; Serving Users</div>
+            <div class="cv-entry-sub">UT Austin · INF 382C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="section-title">contact</div>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:klarazt@utexas.edu">klarazt@utexas.edu</a></p>
+        <p>LinkedIn: <a href="http://linkedin.com/in/klara-guan/" target="_blank" rel="noopener noreferrer">klara_guan</a></p>
+      </div>
+    </div>
+  </main>
+
   <footer>
-    &copy; Copyright 2025 Klara Guan.
-    Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-
-    
+    Copyright 2026 Zhitong Klara Guan.
   </footer>
-
-  <!-- Core JavaScript Files -->
-  <script src="https://klaraguan.github.io/assets/js/jquery.min.js" type="text/javascript"></script>
-  <script src="https://klaraguan.github.io/assets/js/popper.min.js" type="text/javascript"></script>
-  <script src="https://klaraguan.github.io/assets/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="https://klaraguan.github.io/assets/js/mdb.min.js" type="text/javascript"></script>
-  <script async="" src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"></script>
-  <script src="https://klaraguan.github.io/assets/js/common.js"></script>
-
-  <!-- Scrolling Progress Bar -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-      var navbarHeight = $('#navbar').outerHeight(true);
-      $('body').css({ 'padding-top': navbarHeight });
-      $('progress-container').css({ 'padding-top': navbarHeight });
-      var progressBar = $('#progress');
-      progressBar.css({ 'top': navbarHeight });
-      var getMax = function() { return $(document).height() - $(window).height(); }
-      var getValue = function() { return $(window).scrollTop(); }   
-      // Check if the browser supports the progress element.
-      if ('max' in document.createElement('progress')) {
-        // Set the 'max' attribute for the first time.
-        progressBar.attr({ max: getMax() });
-        progressBar.attr({ value: getValue() });
-    
-        $(document).on('scroll', function() {
-          // On scroll only the 'value' attribute needs to be calculated.
-          progressBar.attr({ value: getValue() });
-        });
-
-        $(window).resize(function() {
-          var navbarHeight = $('#navbar').outerHeight(true);
-          $('body').css({ 'padding-top': navbarHeight });
-          $('progress-container').css({ 'padding-top': navbarHeight });
-          progressBar.css({ 'top': navbarHeight });
-          // On resize, both the 'max' and 'value' attributes need to be calculated.
-          progressBar.attr({ max: getMax(), value: getValue() });
-        });
-      } else {
-        var max = getMax(), value, width;
-        var getWidth = function() {
-          // Calculate the window width as a percentage.
-          value = getValue();
-          width = (value/max) * 100;
-          width = width + '%';
-          return width;
-        }
-        var setWidth = function() { progressBar.css({ width: getWidth() }); };
-        setWidth();
-        $(document).on('scroll', setWidth);
-        $(window).on('resize', function() {
-          // Need to reset the 'max' attribute.
-          max = getMax();
-          setWidth();
-        });
-      }
-    });
-  </script>
-
-  <!-- Code Syntax Highlighting -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <script src="https://klaraguan.github.io/assets/js/highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-
-  <!-- Script Used for Randomizing the Projects Order -->
-  <!-- <script type="text/javascript">
-    $.fn.shuffleChildren = function() {
-      $.each(this.get(), function(index, el) {
-        var $el = $(el);
-        var $find = $el.children();
-
-        $find.sort(function() {
-          return 0.5 - Math.random();
-        });
-
-        $el.empty();
-        $find.appendTo($el);
-      });
-    };
-    $("#projects").shuffleChildren();
-  </script> -->
-
-  <!-- Project Cards Layout -->
-  <script type="text/javascript">
-    var $grid = $('#projects');
-
-    // $grid.masonry({ percentPosition: true });
-    // $grid.masonry('layout');
-
-    // Trigger after images load.
-    $grid.imagesLoaded().progress(function() {
-      $grid.masonry({ percentPosition: true });
-      $grid.masonry('layout');
-    });
-  </script>
-
-  <!-- Enable Tooltips -->
-  <script type="text/javascript">
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    })
-  </script>
-
-  <!-- Google Analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', '', 'auto');
-    ga('send', 'pageview');
+    document.querySelectorAll('.pub-abstract-toggle').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var target = document.getElementById(button.getAttribute('aria-controls'));
+        var isOpen = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!isOpen));
+        target.classList.toggle('is-open', !isOpen);
+      });
+    });
   </script>
 </body>
 </html>
